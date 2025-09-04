@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Register Here</h1>
+    <form  method="post" action="register.jsp">
+        <label for="name">name:</label>
+            <input type="text" name="name" placeholder="Enter your name"required><br>
+            
+                <label for="Email">Email:</label>
+                    <input type="text" name="Email" placeholder="Enter your Email" required><br>
+                <label for="DOB">DOB:</label>
+                    <input type="date" name="DOB" required><br>
+                     <label for="number">Contact no:</label>
+                    <input type="number" name="number" placeholder="Enter your Number" required><br>
+                    <label for="name">Gender</label>
+                    <input type="radio" name="Gender" value="M" required>Male
+                    <input type="radio" name="Gender" value="M"required >Female <br>
+        <label for="branch" >branch</label>
+            <select name="brach" >
+                <Option value="IT">IT</Option>
+                 <Option value="CS">CS</Option>
+                  <Option value="ECE">ECE</Option>
+                   <Option value="CS-AIML">CS-AIML</Option>
+            </select> 
+            <br>  
+              <label for="sem">Semester</label>
+            <select name="brach" >
+                <Option value="I">I</Option>
+                 <Option value="II">II</Option>
+                  <Option value="III">III</Option>
+                   <Option value="IV">IV</Option>
+            </select>
+            <br>
+            <label for="file">Upload your resume: </label>
+            <input type="file" name="file" value="file">
+            <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
