@@ -4,43 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        body{
+            background-color: rgb(245, 245, 103);
+
+        }
+        .container{
+            border: 2px solid aqua;
+            width: 450px;
+            margin-left:37%;
+            height: 100vh;
+            background-color: aqua;
+            border-radius: 6px;
+            
+          
+        }
+        .form_container{
+            margin: 15px;
+            
+        }
+        #input1{
+            margin-bottom: 20px;
+            height: 20px;
+
+        }
+        .width{
+            width: 100%;
+        }
+        .button-width{
+            width: 50%;
+            background-color: rgb(48, 235, 48);
+        }
+        .button-width1{
+            width: 50%;
+            background-color: rgb(241, 32, 32);
+        }
+        .input-button{
+            display: flex;
+            flex-direction: row;
+            height: 30px;
+            justify-content: space-evenly;
+            gap: 5px;
+            margin-top: 12px;
+            
+        }
+        .Gender{
+            margin-bottom: 7px;
+        }
+        label{
+            font-weight: 500;
+        }
+
+    
+    </style>
 </head>
 <body>
-    <h1>Register Here</h1>
+    <div class="container">
+        <div class="form_container">
+    <h1 style="text-align: center;">Register Here</h1>
+       <div class="input-box">
     <form  method="post" action="register.jsp">
-        <label for="name">name:</label>
-            <input type="text" name="name" placeholder="Enter your name"required><br>
+        <label for="name">Name:</label>
+        <br>
+            <input type="text"  class="width" id="input1" placeholder="Enter your name"required ><br>
             
                 <label for="Email">Email:</label>
-                    <input type="text" name="Email" placeholder="Enter your Email" required><br>
+                <br>
+                    <input type="text"  class="width" name="Email" id="input1" placeholder="Enter your Email" required><br>
                 <label for="DOB">DOB:</label>
-                    <input type="date" name="DOB" required><br>
+                <br>
+                    <input type="date"  class="width" name="DOB" id="input1" required><br>
                      <label for="number">Contact no:</label>
-                    <input type="number" name="number" placeholder="Enter your Number" required><br>
+                     <br>
+                    <input type="number"  class="width" name="number" id="input1" placeholder="Enter your Number" required><br>
+                    <div class="Gender">
                     <label for="name">Gender</label>
                     <input type="radio" name="Gender" value="M" required>Male
-                    <input type="radio" name="Gender" value="M"required >Female <br>
-        <label for="branch" >branch</label>
-            <select name="brach" >
+                    <input type="radio" name="Gender" value="M"required >Female 
+                    </div> <br>
+        </div>
+                    <label for="branch" >branch</label><br>
+            <select name="brach" class="width" id="input1" style="height: 25px;  ">
                 <Option value="IT">IT</Option>
                  <Option value="CS">CS</Option>
                   <Option value="ECE">ECE</Option>
                    <Option value="CS-AIML">CS-AIML</Option>
             </select> 
             <br>  
-              <label for="sem">Semester</label>
-            <select name="brach" >
+              <label for="sem" id="input1" >Semester</label><br>
+            <select name="brach"   class="width" id="input1" style="height: 25px;" >
                 <Option value="I">I</Option>
                  <Option value="II">II</Option>
                   <Option value="III">III</Option>
                    <Option value="IV">IV</Option>
             </select>
             <br>
-            <label for="file">Upload your resume: </label>
-            <input type="file" name="file" value="file">
+            <label for="message">Address</label><br>
+            <textarea  class="width" name="message" rows="5" cols="5" placeholder="Write your address here"></textarea>
+
+            <label for="file" style="margin-top: 10px;">Upload your 12 Marksheet: </label>
+            <input type="file" id="input1" name="file" value="file">
             <br>
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
+            <div class="input-button">
+        <input type="submit" class="button-width" value="Submit">
+        <input type="reset"  class="button-width1" value="Reset">
+        </div>
     </form>
+</div>
 </body>
 </html>

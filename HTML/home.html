@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .Header {
+      height: 10%;
+      width: 100%;
+      background-color: aqua;
+      color: red;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    .menu {
+      height: 85%;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .left {
+      width: 15%;
+      background-color: rgb(255, 0, 0);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .right {
+      width: 85%;
+      background-color: rgb(119, 119, 82);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .footer {
+      height: 5%;
+      width: 100%;
+      background-color: rgb(212, 60, 169);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+    .navbar{
+        
+
+      
+    }
+    button{
+        border-radius: 10px;
+      
+    }
+    button:hover{
+        background-color: yellow;
+    }
+    .nav_button{
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="Header">Header</div>
+    <div class="navbar">
+        <div class="nav_button">
+        <button><h5>Home</h5></button>
+        <button><h5>About</h5></button>
+         <button><h5>Register</h5></button>
+          <button><h5>Login</h5></button>
+          </div>
+    </div>
+    <div class="menu">
+      <div class="left">Left</div>
+      <div class="right">Right</div>
+    </div>
+    <div class="footer">Footer</div>
+  </div>
+</body>
+</html>
