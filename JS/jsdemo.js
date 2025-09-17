@@ -30,12 +30,13 @@ function sum(a, b){
 
 // CALLBACK 
 
-function hello(user, callback){
-    console.log(`hello ${user}`);
-    callback();
-}
-hello("admin",()=>
-console.log(sum(4,3)));
+// function hello(user, callback){
+//     console.log(`hello ${user}`);
+//     callback();
+// }
+// hello("admin",()=>
+// console.log(sum(4,3)));
 
-hello("admin",function(){
-console.log(sum(4,8))});
+// hello("admin",function(){
+// console.log(sum(4,8))});
+
