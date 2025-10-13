@@ -1,0 +1,11 @@
+const child=document.createElement('div');
+child.class="card";
+const image=document.createElement('img');
+image.src="https://imgs.search.brave.com/cuatffa_dCgSZmbPyicWsNWr7NM8CIlyDsFIdTn7Ye8/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9ibG9n/LmltZy5seS8yMDIx/LzA2L3NfRDJFMTAz/RjgzNDlBMzBGNkFB/OEUyN0NEMkJBNEI2/RURCOTQ2QThERUY1/QjgyNzIwMDkzMjFC/NEY1MUQ2NzlGOV8x/NjI0MzY2MTI1NTM0/X2ltYWdlLnBuZw";
+image.width="150";
+image.height="150";
+const h4=document.createElement('h4');
+h4.innerText="Price : 350/-";
+child.appendChild(image);
+child.appendChild(h4);
+document.body.appendChild(child);
